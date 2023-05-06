@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/home-style.css') }}">
+  <link rel="stylesheet" href="style-log-in.css">
+  <title>Home</title>
+  <div id="fading-box">
+    <div class="entrance" ><h1>Object detection AI</h1></div>
+    
+    <script>
+    var slideBox1 = document.getElementById('fading-box');
+      setTimeout(function(){
+          slideBox1.style.display ='none';
+      }, 2000); 
+      </script>
+
+    </div>
+  </div> 
+</head>
+<body> 
+<div id="body-show">
+
+
+  <script>
+  var slideBox2 = document.getElementById('body-show');
+   setInterval(function(){
+        slideBox2.style.display = 'block';
+    },2000); </script> 
+
+
+    <div class="container">
+      <div class="left-hyperlinks"><a  href="home.html"><h1>Home </h1></a>
+      </div>
+      <div class="right-hyperlinks">
+        <div><a class="right-hyperlink" href="">Real time detection</a>
+        </div>
+        <div><a class="right-hyperlink"  href="">Image</a>
+        </div>
+        <div><a class="right-hyperlink" href="">Video</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-sm">
+     <label for="image">
+    <i class="fas fa-upload "></i>=
+    <span>image...</span>
+    </label>  
+    <form method="POST" action="{{ url_for('upload_image') }}" enctype="multipart/form-data">
+    <input type="file" name="photo" id="image" >
+    <input type="submit" value="soummetre"></form>
+    </div>
+
+
+
+</div>
+</body>
+
+</html>

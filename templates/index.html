@@ -1,0 +1,34 @@
+<!DOCTYPE html> <html><html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Detect'O</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <script src="https://kit.fontawesome.com/5a61c1c540.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    <div class="container">
+        <div class="form-box">
+             <h1> Detect'O </h1>
+             <div class="btn-field"><a href="{{ url_for('camera') }}" class="btn-field">real time</a></div>
+             <form method="POST" action="{{ url_for('upload_image') }}" enctype="multipart/form-data">
+                <!----<div class="input-group">
+                    <div class="input-field">
+                      <i class="fa-solid fa-link"></i>
+                        <input type="texte" placeholder="Enter le lien de la photo pour l'analyse">
+                    
+                    </div>!---->
+                    <div class="input-field">
+                       <i class="fas fa-upload "></i>
+                        
+                       <input type="file" name="photo" id="image" >
+                       </div>
+                   
+                <div class="btn-field">
+                    <center><input type="submit" value="soummetre" class="btn-field"></center></div>
+                   <!-----<button type="button">Soumettre</button>            </div>!-->
+             </form>
+        </div>
+    </div>
+    
+    </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Monda&family=Lato:wght@700&family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <title>Document</title>
+  <style>
+    body{
+      margin: 0;
+      background-image: url('../static/css/Wallpaper.png');
+      background-size: cover;
+      background-position: center;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+    }
+   .image{
+      height: 80vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+h1{
+  margin-bottom: 0px;
+ 
+ 
+  font-size: 50px;
+
+}
+    img {
+      width: 50%;
+    }
+
+.button-55 {
+  
+align-self: center;
+  background-color: #f9a825;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #1a1919;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Neucha, sans-serif;
+  font-size: 2rem;
+  line-height: 23px;
+  outline: none;
+  padding: .75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-55:hover {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+.button-55:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+  </style>
+</head>
+<body>
+ 
+<div>
+  <center><h1>IMAGE</h1></center>
+  <div class="image">
+    <img src="{{ url_for('static', filename=image_path) }}">
+  </div>
+</div>
+<div ><center><a href="{{ url_for('index') }}" class="button-55" role="button">back</a></center></div>
+
+</body>
+</html>

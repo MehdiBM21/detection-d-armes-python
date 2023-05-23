@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Monda&family=Lato:wght@700&family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+<title >GUN DETECTION</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+<div id="fading-box">
+    <div class="entrance" ><h1>GUN DETECTION</h1></div> 
+        <script>
+            var slideBox1 = document.getElementById('fading-box');
+            setTimeout(function(){
+                slideBox1.style.display ='none';
+            }, 1500); 
+        </script>
+    </div>
+</div> 
+</head>
+<body> 
+    <div id="body-show">
+        <script>
+            var slideBox2 = document.getElementById('body-show');
+            setInterval(function(){
+                 slideBox2.style.display = 'block';
+            },1500); 
+        </script> 
+        <div id="navbar">
+          <div id="logo"><img src="{{ url_for('static',filename='Logo.png')}}" width="11%" height="auto" alt=""></div>
+          <div class="hyperlinks">
+            <div><a class="hyperlink" href="#aa">About</a></div>
+            <div><a href="#mm" class="hyperlink"  >Test</a></div>
+            <div><a href="https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2_detection_zoo.md" target="_blank"  style="color: #f9a825;font-weight: 800;" class="hyperlink"  >Model </a></div>
+          </div>
+        </div>
+        <div class="slideshow-container">
+            <div class="slideshow-inner">
+                <div class="mySlides fade">
+                    <img  src="{{ url_for('static',filename='img4.jpg')}}" class="img" style='width: 100%;height: 100vh;' alt="sally lightfoot crab"/>
+                    <div class="on-slides">
+
+                        <div >
+                          <span class="letter1">R</span>
+                          <span class="letter1">E</span>
+                          <span class="letter1">A</span>
+                          <span class="letter1">L </span>
+                          <span > &nbsp </span>
+                          <span > &nbsp </span>
+                          <span > &nbsp </span>
+                          <span class="letter1">T</span>
+                          <span class="letter1">I</span>
+                          <span class="letter1">M</span>
+                          <span class="letter1">E </span>
+                        </div>
+                          
+                        <div>
+                            <span class="letter2">D</span>
+                            <span class="letter2">E</span>
+                            <span class="letter2">T</span>
+                            <span class="letter2">E</span>
+                            <span class="letter2">C</span>
+                            <span class="letter2">T</span>
+                            <span class="letter2">I</span>
+                            <span class="letter2">O</span>
+                            <span class="letter2">N</span>
+                        </div>
+                            <P><br><br> Detecting guns in  real time with high precision and without any delay <br><br><br>
+                            <a href="#s" target="_blank" rel="noopener noreferrer"><i class="fa-sharp fa-solid fa-greater-than fa-sm" style="font-weight: 900;"></i>&nbsp&nbsp Learn more</a></P>
+                            
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <img  src="{{ url_for('static',filename='img6.jpg')}}" class="img" style='width: 100%;height: 100vh;' alt="fighting nazca boobies"/>
+                    <div class="on-slides">
+
+                       
+                        <div>
+                          <span class="letter1">I</span>
+                          <span class="letter1">M</span>
+                          <span class="letter1">A</span>
+                          <span class="letter1">G</span>
+                          <span class="letter1">E</span>
+                          <span class="letter1">S</span>
+                  
+                        </div>
+                        <div>
+                          <span class="letter2">A</span>
+                            <span class="letter2">N</span>
+                            <span class="letter2">D</span>
+                            <span > &nbsp </span>
+                            <span >&nbsp </span>
+                            <span class="letter2">V</span>
+                            <span class="letter2">I</span>
+                            <span class="letter2">D</span>
+                            <span class="letter2">E</span>
+                            <span class="letter2">O</span>
+                            <span class="letter2">S</span>
+                        </div>
+                
+                            <P><br><br> Providing a possibility of testing gun detection on  images and videos <br><br><br>
+                            <a href="#s" target="_blank" rel="noopener noreferrer"><i class="fa-sharp fa-solid fa-greater-than fa-sm" style="font-weight: 900;"></i>&nbsp&nbsp Demonstration</a></P>
+                            
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                  <img  src="{{ url_for('static',filename='img8.png')}}" class="img" style='width: 80%;height: 100vh;margin-left: 10%;' alt="sally lightfoot crab"/>
+                  <div class="on-slides">
+                    <div>
+                      <span class="letter1">T</span>
+                      <span class="letter1">E</span>
+                      <span class="letter1">N</span>
+                      <span class="letter1">S </span>
+                      <span class="letter1">O</span>
+                      <span class="letter1">R</span>
+                      <span class="letter1">F</span>
+                      <span class="letter1">L</span>
+                      <span class="letter1">O</span>
+                      <span class="letter1">W</span>
+                    </div>
+                    <div>
+                      <span class="letter2">O</span>
+                      <span class="letter2">B</span>
+                      <span class="letter2">J</span>
+                      <span class="letter2">E</span>
+                      <span class="letter2">C</span>
+                      <span class="letter2">T</span>
+                      <span > &nbsp </span>
+                      <span > &nbsp </span>
+                      <span class="letter2">D</span>
+                      <span class="letter2">E</span>
+                      <span class="letter2">T</span>
+                      <span class="letter2">E</span>
+                      <span class="letter2">C</span>
+                      <span class="letter2">T</span>
+                      <span class="letter2">I</span>
+                      <span class="letter2">O</span>
+                      <span class="letter2">N</span>
+                    </div>
+                          <P><br><br>Based on the tensorflow  advanced machine learning applications  <br><br><br>
+                          <a href="https://www.tensorflow.org/" target="_blank" rel="noopener noreferrer"><i class="fa-sharp fa-solid fa-greater-than fa-sm" style="font-weight: 900;"></i>&nbsp&nbsp  Lean more</a></P>
+                          
+                  </div>
+              </div>
+              
+                <a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
+                <a class="next" onclick='plusSlides(1)'>&#10095;</a>
+                
+            </div>
+            <img src="{{ url_for('static',filename='Paper.png')}}"  class="paper" height="13%" width="100%" alt="">
+        </div>
+        <div id="mm"><br><br><br><br></div>
+        <center><h1 id="about">TEST</h1></center>
+            <div  class="box" >
+                <a  data-bs-toggle="modal"  data-bs-target="#myModal-camera" class="box-2">
+                    <h2 style="color: #f9a825;font-size: 60px;font-weight: 600;">[&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp]</h2>
+                </a>
+                <a  data-bs-toggle="modal"  data-bs-target="#myModal-image" class="box-2 ">
+                  <h2 style="color: #f9a825;font-size: 60px;font-weight: 600;">[&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp]</h2>
+                </a>
+                <a  data-bs-toggle="modal"  data-bs-target="#myModal-video" class="box-2">
+                  <h2 style="color: #f9a825;font-size: 60px;font-weight: 600;">[&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp]</h2>
+                </a>
+                
+        
+            </div>
+            <div id="aa" >
+              <br><br><br><br>
+            </div>
+            <div id="about-container">
+       
+              <center>
+                   <h1 id="about">ABOUT</h1><i  class="fa-solid fa-chevron-down" style="color: #000000;font-size: 70px;"></i></center>
+                  <div class="about-box" style="position: relative;margin-top: 5%;">
+                      <img src="{{ url_for('static',filename='paper-inverted.png')}}" style="position: absolute;top:-46px;" width="100%" height="90vh" alt="">
+                      <div  class="about-flex" >
+                          <img src="{{ url_for('static',filename='img10.jpg')}}" width="40%"  alt="">
+                          <div class="about-text" >
+                              <H6 >&nbsp&nbsp&nbspWHAT IS ARMS DETECTION</H6>
+                              <h1>Arms detection is the identification and recognition of firearms. </h1><br>
+                              <p>
+                                  Our arms detection AI is utilizing the TensorFlow Model Zoo's SSD MobileNet V2 FPNLite 320x320 enableing real-time identification of concealed weapons, revolutionizing security protocols and preventing potential threats. This efficient and accurate technology enhances public safety by swiftly detecting firearms, empowering security teams to respond promptly and mitigate risks. The lightweight architecture of SSD MobileNet V2 FPNLite ensures rapid processing, making it an effective tool for arms detection in various high-security environments.
+                              <br><br></p>
+                              <h5>
+                                  <i class="fa-sharp fa-solid fa-check fa-lg" style="color: #e5a401;"></i>&nbsp&nbsp&nbspYOU CAN CHECK IT<a href="#mm" > HERE</a>
+                              </h5>
+                              <h5>
+                                  <i class="fa-sharp fa-solid fa-check fa-lg" style="color: #e5a401;"></i>&nbsp&nbsp&nbspLEARN MORE <a href="#box" >HERE</a>
+                              </h5>
+                          </div>
+                      </div >
+              
+                      <img src="{{ url_for('static',filename='paper.png')}}" style="position: absolute;bottom:0;right: 0;" width="100%" height="90vh" alt="">
+                      
+                  </div>
+                  <center><pre >
+<img src="{{ url_for('static',filename='Logo2.png')}}" width="10%" height="auto" alt="">
+<br><br>
+All rights reserved. This unpublished work, created by Group 2 of the Python project in the Computer Engineering 
+program at national school of applied sciences, is protected under copyright <span style="font-size: 20px;font-weight: 500;">&copy;</span> law for the academic year 2022-2023.</pre></center>
+     </div>
+     <div class="modal" id="myModal-camera" >
+      <div class="modal-dialog modal-fullscreen" style="background-color: whitesmoke;">
+          <div class="modal-content ">
+           <div class="center-camer">
+            <center>
+              <h1 >Open camera</h1>
+              <a href="{{ url_for('camera') }}" type="submit" style="margin-top: 50px;" name="submit" class="submit-camera type1"></a>
+              <div id="spin"></div>
+              <button type="button" class="exit"  data-bs-dismiss="modal" style="width: 34%;margin: 10px auto;"><i class="fa-solid fa-arrow-left fa-lg fa-shake" style="color: #ffffff;"></i> Back</button>
+            </center>
+           </div>
+          </div>
+      </div>
+  </div>
+  <div class="modal" id="myModal-image">
+      <div class="modal-dialog modal-fullscreen" style="background-color: whitesmoke;">
+          <div class="modal-content">
+              <h1 >insert an image</h1>
+              <form action="{{ url_for('upload_image') }}" method="post" class="container-small" enctype="multipart/form-data">
+                   <label for="photo">
+                  <i class="fas fa-upload "></i>
+                  <span class="file-name">image...</span>
+                  <input type="file" name="photo" id="photo"  accept="image/png, image/jpeg, image/jpg" >
+                  </label>  
+                  
+                  <button type="submit"  name="submit" id="submit-image">upload</button>
+                  <div id="spin"></div>
+                  <button type="button" class="exit" data-bs-dismiss="modal"><i class="fa-solid fa-arrow-left fa-lg fa-shake" style="color: #ffffff;"></i> Back</button>
+              </form>
+             
+          </div>
+      </div>
+  </div>
+  <div class="modal" id="myModal-video">
+      <div class="modal-dialog modal-fullscreen" style="background-color: whitesmoke;">
+          <div class="modal-content">
+              <h1>insert a video</h1>
+              <form action="{{ url_for('video') }}" method="post" class="container-small" enctype="multipart/form-data">
+                   <label for="video">
+                  <i class="fas fa-upload "></i>
+                  <span class="video-name">Video...</span>
+                  <input type="file" name="video" id="video"  accept="video/mp4,video/x-m4v,video/*,image/gif" >
+                  </label>  
+                 
+                  <button type="submit"  name="submit" id="submit-image">upload</button> 
+                  <div id="spin"></div>
+                  <button type="button" class="exit" data-bs-dismiss="modal" ><i class="fa-solid fa-arrow-left fa-lg fa-shake " style="color: #ffffff;"></i> Back</button>
+                </form>
+          </div>
+      </div>
+  </div>
+    </div>
+
+<script>
+var slideIndex = 1;
+var myTimer;
+var slideshowContainer;
+window.addEventListener("load",function() {
+    showSlides(slideIndex);
+    myTimer = setInterval(function(){plusSlides(1)}, 9000);
+    slideshowContainer = document.getElementsByClassName('slideshow-inner')[0];
+
+})
+
+function plusSlides(n){
+  clearInterval(myTimer);
+  if (n < 0){
+    showSlides(slideIndex -= 1);
+  } else {
+   showSlides(slideIndex += 1); 
+  }
+  if (n === -1){
+    myTimer = setInterval(function(){plusSlides(n + 2)}, 9000);
+  } else {
+    myTimer = setInterval(function(){plusSlides(n + 1)}, 9000);
+  }
+}
+function currentSlide(n){
+  clearInterval(myTimer);
+  myTimer = setInterval(function(){plusSlides(n + 1)}, 9000);
+  showSlides(slideIndex = n);
+}
+function showSlides(n){
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+ 
+      slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
+  
+}
+
+window.addEventListener("scroll", scrollFunction);
+
+function scrollFunction() {
+  if (window.scrollY > 100 || document.documentElement.scrollTop > 100) {
+    document.getElementById("navbar").style.backgroundColor = "black";
+    document.getElementById("navbar").style.alignItems = "center";
+    document.getElementById("logo").style.top = "auto";
+  } else {
+    document.getElementById("navbar").style.backgroundColor = "transparent";
+    document.getElementById("navbar").style.alignItems = "end";
+    document.getElementById("logo").style.top = "5%";
+  }
+
+  if (window.scrollY > 10 || document.documentElement.scrollTop > 10) {
+    var imgElements = document.getElementsByClassName("img");
+    for (var i = 0; i < imgElements.length; i++) {
+      imgElements[i].style.top = document.documentElement.scrollTop + "px";
+    }
+  } else {
+    var imgElements = document.getElementsByClassName("img");
+    for (var i = 0; i < imgElements.length; i++) {
+      imgElements[i].style.top = "0";
+    }
+  }
+}
+
+const file = document.querySelector('#photo');
+file.addEventListener('change', (e) => {
+    const [file] = e.target.files;
+    const { name: fileName, size } = file;
+    const fileSize = (size / 1000).toFixed(2);
+    const fileNameAndSize = `${fileName} - ${fileSize}KB`;
+    console.log(fileNameAndSize);
+    document.querySelector('.file-name').textContent = fileNameAndSize;
+});
+
+const file2 = document.querySelector('#video');
+file2.addEventListener('change', (e) => {
+    const [file2] = e.target.files;
+    const { name: fileName, size } = file2;
+    const fileSize = (size / 1000).toFixed(2);
+    const fileNameAndSize = `${fileName} - ${fileSize}KB`;
+   console.log(fileNameAndSize);
+    document.querySelector('.video-name').textContent = fileNameAndSize;
+});
+document.getElementById("submit-image").addEventListener("click", function(){
+        document.getElementById("spin").innerHTML= "<i class='spinner-border'></i>";
+});
+var elements = document.getElementsByClassName("submit-camera");
+for (var i = 0; i < elements.length; i++) {
+elements[i].addEventListener("click", function() {
+document.getElementById("spin").innerHTML = "<i class='spinner-border'></i>";
+});
+}
+
+       
+</script>
+
+
+
+</body>
+</html>

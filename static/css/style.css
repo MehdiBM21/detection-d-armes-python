@@ -1,0 +1,634 @@
+::-webkit-scrollbar{
+width: 10px;
+scroll-margin-block: 10px;
+
+}
+::-webkit-scrollbar-track{
+  background-color: #16171c;
+  }
+  ::-webkit-scrollbar-thumb{
+    background: rgb(22,23,28);
+    background: linear-gradient(180deg, rgba(22,23,28,1) 13%, rgba(249,168,37,1) 100%);
+    border-radius: 7px;
+    }
+ /*=====================================entrance or the fading box========================================  */
+ #fading-box{
+  display: flex;
+  justify-content: center;
+ width: 100svw;
+ align-items: center;
+  height: 100svh;
+animation:identifier 1.5s ; 
+opacity: 1;
+background-color: rgb(0, 0, 0);
+
+}
+.entrance{
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-weight: 700;
+  font-size:25px;
+  animation:entrance 1.6s ease-in ; 
+  opacity: 1.0;
+  font-display: none;
+  
+  
+}
+
+@keyframes identifier {
+
+ 100%{
+  opacity: none;
+    
+  }
+}
+@keyframes entrance{
+  90%{
+    text-shadow:white 2px 2px 20px; 
+    scale: 1.9;
+    text-shadow:none;
+    opacity: 0;
+   
+  }
+  100%{
+    text-shadow:none;
+    scale: 0.5;
+    opacity: 0;
+   
+  }
+}
+#body-show{
+  display: none;
+  animation: body 0.5s ease-in -2s;
+}
+@keyframes body{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    
+    opacity: 1;
+   
+  }
+}
+  /* -==================================================  main   ======================================= */
+  body {
+    margin: 0;
+    background-color: #fefefe;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+  }
+  
+  .slideshow-container {
+      width: 100vw;
+      height: 111vh;
+      position: relative;
+      overflow: hidden;
+      margin: auto ;
+      background-color: rgb(0, 0, 0);
+  }
+  
+  .mySlides {
+      display: none;
+      
+    animation: fade 8.1s ease-in-out ;
+       
+  }
+.img{
+    position: absolute;
+}
+  #navbar {
+    background-color: transparent;
+  position: fixed;
+    height: 14%;
+    justify-content:right ;
+    align-items:end;
+    width: 100%;
+    display: flex;
+    z-index: 1;
+   
+  }
+ #logo{
+    left: 4%;
+    position: absolute;
+   top: 5%;
+
+  }
+  
+  .hyperlinks{
+      display: flex;
+      margin-right: 8%;
+      z-index: 1;
+     
+        }
+      .hyperlinks .hyperlink {
+      font-size: 20px;
+      font-family: 'Roboto Condensed', sans-serif;
+       cursor: pointer;
+      font-weight: 700;
+      font-style: normal;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.91px;
+      margin-left: 3rem;
+         color: rgb(255, 255, 255);
+        text-decoration: none;
+        }
+      
+      .hyperlinks .hyperlink:hover {
+          font-weight: 800;
+          color: #f9a825;
+          text-decoration:underline 2px;
+          text-underline-offset: 5px;
+      }
+      @keyframes fade {
+      0%{
+          scale:1.2;
+          opacity: 0.7;
+      }
+    
+      12%,93%{
+          scale:1;
+          opacity: 1;
+      }
+      100%{
+          scale:0.75;
+          opacity: 0.6;
+      }
+    }
+  .prev,
+  .next {
+      cursor: pointer;
+      position: absolute;
+      text-decoration: none;
+      top: 75%;
+      background-color:rgba(79, 75, 75, 0.4) ;
+      padding: 16px;
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 20px;
+      transition: .6s ease;
+      border-radius: 0 3px 3px 0
+      
+  }
+  .next {
+      right: 15%  ;
+      border-radius: 3px 3px 3px 3px
+  }
+  .prev {
+      right: 19%;
+      border-radius: 3px 3px 3px 3px
+  }
+  .prev:hover,
+  .next:hover {
+      color: #000000;
+      background-color: rgba(252, 252, 252, 0.75);
+  }
+  /* =============================================          on slides             ======================================= */
+  .on-slides{
+    position:absolute;
+    top: 47vh;
+    z-index: 2;
+    left: 5%;
+    color: #fefefe;
+    
+  }
+  .letter2 { 
+    display: inline-block;
+    font-size: 60px;
+    z-index: 2;
+    font-weight:900;
+    font-family: 'Roboto Condensed', sans-serif;
+    opacity: 0;
+    letter-spacing: -4px;
+    animation: flip 5.5s ease-in ;
+    transform-origin: center;
+}
+.letter2:nth-child(1) { animation-delay: 0.45s; }
+.letter2:nth-child(2) { animation-delay: 0.6s; }
+.letter2:nth-child(3) { animation-delay: 0.75s; }
+.letter2:nth-child(4) { animation-delay: 0.9s; }
+.letter2:nth-child(5) { animation-delay: 1.05s; }
+.letter2:nth-child(6) { animation-delay: 1.2s; }
+.letter2:nth-child(7) { animation-delay: 1.35s; }
+.letter2:nth-child(8) { animation-delay: 1.5s; }
+.letter2:nth-child(9) { animation-delay: 1.65s; }
+.letter2:nth-child(10) { animation-delay: 1.8s; }
+.letter2:nth-child(11) { animation-delay: 1.95s; }
+.letter2:nth-child(12) { animation-delay: 2.1s; }
+.letter2:nth-child(13) { animation-delay: 2.25s; }
+.letter2:nth-child(14) { animation-delay: 2.4s; }
+.letter2:nth-child(15) { animation-delay: 2.55s; }
+.letter2:nth-child(16) { animation-delay: 2.7s; }
+.letter2:nth-child(17) { animation-delay: 2.85s; }
+.letter1 {
+    display: inline-block;
+    font-size: 60px;
+    font-weight:900;
+    letter-spacing: -4px;
+    font-family: 'Roboto Condensed', sans-serif;
+    opacity: 0;
+    animation: flip 6s ease-in ;
+    transform-origin: center;
+}
+.letter1:nth-child(1) { animation-delay: 0.1s; }
+.letter1:nth-child(2) { animation-delay: 0.25s; }
+.letter1:nth-child(3) { animation-delay: 0.40s; }
+.letter1:nth-child(4) { animation-delay: 0.55s; }
+.letter1:nth-child(5) { animation-delay: 0.7s; }
+.letter1:nth-child(6) { animation-delay: 0.85s; }
+.letter1:nth-child(7) { animation-delay: 1s; }
+.letter1:nth-child(8) { animation-delay: 1.15s; }
+.letter1:nth-child(9) { animation-delay: 1.3s; }
+.letter1:nth-child(10) { animation-delay: 1.45s; }
+.on-slides p{
+display: inline-block;
+    font-size: 14px;
+    opacity: 0;
+    animation: show-text 7s ease 0.7s;
+    font-family: 'Monda', sans-serif;
+}
+.on-slides p a{
+    cursor: pointer;
+    font-weight: 700;
+    text-transform: uppercase;
+       color: #f9a825;
+      text-decoration: none;
+    }
+    .on-slides p a:hover {
+        font-weight: 600;
+        text-decoration:underline 2px;
+        text-underline-offset: 5px;
+    }
+@keyframes show-text {
+0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    13%{
+        opacity: 0;
+    }
+   20% {
+        opacity: 1;
+    }
+    25%,95%{
+        opacity: 1;
+        transform:translateY(0)  ;
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(90px) ;
+    }
+}
+@keyframes flip {
+   0% {
+        opacity: 0;
+        transform: translateX(400px) rotateZ(50deg);
+    }
+    1%{
+        opacity: 1;
+    }
+    12% ,90%{
+        opacity: 1;
+        transform:translateX(0) rotateZ(0) ;
+    }
+
+    100%{
+        opacity: 0;
+        transform: translateY(100px) ;
+    }
+}
+.paper{
+    position: absolute;
+    bottom: 0;
+}
+/* ===================================================   boxes   ==================================================================== */
+.box{
+    display: flex;
+    background-color: #fefefe;
+    height: 40vh;
+    width: 96vw;
+  margin: 2% 2% 2% 2%;
+}
+
+.box-2{
+  text-decoration: none;
+    padding: 50px 0 50px 0;
+    cursor: pointer;
+    width: 29%;
+   height: 80%;
+    margin-left: 3%;
+    display: flex;
+    font-size:44px;
+ background-color: black;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    transition: all 0.32s ease-in ;
+    transform-style: preserve-3d;
+    transform-origin: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* ================= first camera   ======================= */
+.box-2:nth-child(1){
+    background-image: url(gun1.jpg) ;
+}
+.box-2:nth-child(1)::before {
+  content: "CAMERA";
+  color: rgb(255, 255, 255);
+  position: absolute;
+}
+.box-2:nth-child(1):hover::after {
+  opacity: 1;
+  color: rgb(255, 255, 255);
+  transform: rotateY(-180deg);
+  content: "CAMERA";
+ 
+}
+/* ===================== seconde  image  ================== */
+.box-2:nth-child(2){
+  background-image: url(gun2.jpg) ;
+}
+.box-2:nth-child(2)::before {
+  content: "IMAGE";
+  color: rgb(255, 255, 255);
+  position: absolute;
+}
+.box-2:nth-child(2):hover::after {
+  opacity: 1;
+  color: rgb(255, 255, 255);
+  transform: rotateY(-180deg);
+  content: "IMAGE";
+}
+/* ==================== third video =================== */
+.box-2:nth-child(3){
+  background-image: url(Gun3.jpg) ;
+}
+.box-2:nth-child(3)::before {
+  content: "VIDEO";
+  color: rgb(255, 255, 255);
+  position: absolute;
+}
+.box-2:nth-child(3):hover::after {
+  opacity: 1;
+  color: rgb(255, 255, 255);
+  transform: rotateY(-180deg);
+  content: "VIDEO";
+ 
+}
+/* ====================== text animation ===================== */
+.box-2::after {
+ 
+  position: absolute;
+  opacity: 0;
+}
+
+.box-2:hover::before {
+  opacity: 0;
+}
+
+
+
+.box-2:hover {
+  transform: perspective(450px) rotate3d(0, 1, 0, 180deg);
+}
+/* ================================================  ABOUT  ========================================================= */
+#about-container{
+  background-color: #fefefe;
+
+  margin-top: 0; 
+  margin-bottom: 0;
+}
+#about{
+  margin: 4% auto 6;
+  font-size: 50px;
+  font-family: 'Roboto Condensed', sans-serif;
+  letter-spacing: -0.5px;
+  font-weight:700;
+  
+}
+.about-box{
+  height: min-content;
+  width: 100%;
+  background-color: #F3EDE8;
+
+}
+.about-flex{
+  display:flex;
+  
+}
+.about-text{
+margin: 5% 7% 8% 7%;
+}
+.about-text h6{
+  color:rgb(163,151,141);
+  font-size: 14px;
+  font-family: 'Roboto Condensed', sans-serif;
+font-weight:700;
+}
+.about-text h1{
+  font-size: 42px;
+  font-family: 'Roboto Condensed', sans-serif;
+font-weight:700;
+letter-spacing: -1px;
+}
+.about-text p{
+  font-size: 16px;
+  font-family: 'Monda', sans-serif;
+font-weight:400;
+color: rgb(134,128,124);
+
+}
+.about-text h5{
+  font-size: 17px;
+  color:#87817D;
+  font-family: 'Roboto Condensed', sans-serif;
+font-weight:700;
+}
+.about-text h5 a{
+  text-decoration: none;
+  color: #e5a401;
+  cursor: pointer;
+  transition: all 0.2s;
+}  
+.about-text h5 a:hover{
+  
+  color: rgb(12, 12, 6);
+ 
+}  
+/* =======================================  MODALS  ======================================== */
+.modal-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image:url('Wallpaper.png') ;
+  background-size: cover;
+  background-position: center;
+
+}
+.center-camer{
+width: 100%;
+
+}
+.modal-content h1{
+   font-family: 'Roboto Condensed', sans-serif;
+   font-weight:700;
+   font-size: 50px;
+   
+}
+.container-small{
+  max-height: 100vh;
+  width: 43vw;
+  position: relative;
+  /* background-color: #e0e0e0; */
+
+  }
+.container-small h1{
+   font-family:'roboto';
+   font-weight: 600;
+    }
+  .container-small input{ 
+      flex: none;
+   opacity: 0;
+   position: absolute;
+    } 
+  .container-small label{
+      cursor: pointer;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+      width: 100%;
+      height: 50svh;
+      border-style: dashed;
+      overflow: hidden;
+   }
+    .container-small label i{
+      position: absolute;
+      font-size: 3rem;
+          }
+    .container-small label span{
+  position: absolute;
+  margin-top: 80px;
+  font-weight: 400;
+  font-size: large;
+  
+      }
+  
+  .container-small #submit-image{
+    font-size: larger;
+    background-color:#ba7506;
+   color: aliceblue;
+    font-weight: 500;
+    margin: 10px auto  auto 11%;
+    width: 80%;
+    height: 50px;
+    border-radius:20px ;
+    border: 2px solid black;
+    transition: all 0.5s;
+      }
+  .container-small #submit-image:hover{
+    box-shadow: 10px 10px 10px black;
+    transform: translateX(-10px);
+    transition: all 0.5s;
+  
+      } 
+     
+.exit{
+  font-size: larger;
+  background-color:#d4180a;
+ color: aliceblue;
+  font-weight: 500;
+ 
+  height: 48px;
+  border: 2px solid black;
+  border-radius:20px ;
+  box-shadow: 0px 9px 0px 1px #920a0a;
+  -webkit-box-shadow: 0px 9px 0px 1px rgb(146, 10, 10);
+  -moz-box-shadow: 0px 9px 0px 1px rgb(146, 10, 10);
+  margin: 10px auto  auto 11%;
+  width: 80%;
+transition: all 0.5s;
+
+}
+
+.exit:hover{
+  transition: all 0.5s;
+  transform: translateY(5px);
+  box-shadow: 0px 4px 0px 1px rgb(146, 10, 10);
+  -webkit-box-shadow: 0px 4px 0px 1px rgb(146, 10, 10);
+  -moz-box-shadow: 0px 4px 0px 1px rgb(146, 10, 10);
+
+}
+.submit-camera {
+  height: 55px;
+  width: 34%;
+  border: none;
+  border-radius: 26px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid black;
+  margin:10px 0 20px 0;
+  transition: all 0.6s ease-in-out;
+}
+
+
+.type1::after {
+  content: "\f04b";
+  /* f030 */
+  font-family: "Font Awesome 5 Free";
+  height: 55px;
+  width: 100%;
+  background-color: #fa1303;
+  color: #fff;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translateY(55px);
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.6s ease-in-out;
+}
+
+.type1::before {
+
+  content: "launch";
+  height:55px;
+  width: 100%;
+  background-color: #3e9c3b;
+  color: #ffffff;
+  position: absolute;
+  bottom: 0%;
+  /* top: 0%; */
+  left: 0%;
+  transform: translateY(0px) scale(1.2);
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.6s ease-in-out;
+}
+
+.type1:hover::after {
+  transform: translateY(0) scale(1.2);
+}
+
+.type1:hover::before {
+  transform: translateY(-55px) ;
+}
+
+           
+@media screen and (max-width:950px){
+  .container-small{
+  max-height: 100vh;
+  width: 80vw;
+  }
+
+            
+  }
